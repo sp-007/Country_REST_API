@@ -1,0 +1,248 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+body{
+    font-size: 16px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.dark{
+    color:hsl(0, 0%, 100%) !important;
+}
+.light{
+    color:hsl(200, 15%, 8%) !important;
+}
+.dark-bg{
+    background-color:hsl(207, 26%, 17%);
+}
+.dark-el
+{
+    background-color:hsl(209, 23%, 22%);    
+}
+.dark-sh
+{
+    box-shadow: 0 0 3px 3px hsl(209, 23%, 15%);
+}
+.light-bg{
+    background-color: hsl(0, 0%, 98%);     
+}
+.light-el
+{
+    background-color: hsl(0, 0%, 100%);    
+    margin-bottom:2px; 
+}
+.light-sh
+{
+    /* box-shadow: 0 0 2px 2px hsl(0, 0%, 90%);  */
+    box-shadow: 0 0 5px 1px hsl(206, 7%, 81%); 
+}
+
+/*------------------------------------------------------------------*/
+
+#header h1{
+    display: inline;
+     width:70%;
+}
+#header{
+    display: flex;
+    padding: 0.5rem 4rem;
+    cursor: default;
+}
+#header>div{
+    width:30%;
+    display: inline-flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+#header span{
+    font-size: 120% ;
+    cursor: pointer;
+    }
+span img{
+    height:50%;
+    width:15%;
+   max-height: 1rem;
+   max-width: 0.8rem;
+   min-height: 0.2rem;
+   min-width: 0.2rem;
+}
+
+/*---------------------------------------------------------------------*/
+#section{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:2rem 4rem;
+} 
+
+/*---------------------------------------------------------------*/
+
+#search
+{
+    display:flex; 
+    margin:0.3rem;
+    height: 2.5rem;
+    width: 30rem;
+    border-radius: 0.3rem;
+}
+#search img{
+    height: 50%;
+    width: 1.2rem;
+    padding: 0.7rem 0.7rem 0 1.1rem;
+}
+#search input{
+    font-size: 0.9rem;    
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.3rem;
+    border:none !important;
+    width:100%;    
+}
+/*---------------------------------------------------------------*/
+
+#filter
+{
+    margin:0.3rem;
+    padding: 0 0.3rem;
+    font-size: 0.9rem;
+    display:flex; 
+    border-radius: 0.3rem;
+    height: 2.5rem;
+    width:10rem;
+    align-items:center;
+    justify-content: space-around;
+}
+#filter span{
+    margin-right:0.6rem;
+    width:80%;
+    text-transform: capitalize;
+}
+#filter img{    
+    height: 0.6rem;
+    width: 0.6rem;
+}
+.show{
+    display: block;
+}
+.hide{
+    display:none;
+}
+#menu
+{
+    position: relative;
+    cursor: pointer;
+}
+#menu-list{
+    border-radius: 0.3rem;
+    width: 10rem;
+    padding: 0.3rem;
+    position:absolute;
+    top:3.1rem;
+    left:0.3rem;
+}
+#menu-list li{
+    margin:0.3rem;
+    font-size: 0.9rem;
+    display:block; 
+    opacity:0.6;
+    align-items:center;
+}
+#menu-list li:hover{
+    opacity: 1;
+    border-bottom: 2px solid red;
+    transition: border-bottom ease-in 0.5s;
+}
+
+/*---------------------------------------------------------------*/
+#result
+{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding:2rem 4rem;
+    min-height: 100vh;
+}
+.card{
+    font-size: 0.8rem;
+    height:fit-content;
+    width: fit-content;    
+    margin: 0.6rem;
+    border-radius:0.3rem;
+    display:inline-grid;
+    grid-template-rows: 10rem 10rem;
+    grid-template-columns: 15rem;      
+    overflow: hidden;
+}
+.card-img{    
+    display: grid;
+    /* border-radius: 0.3rem 0.3rem 0 0; */
+    padding: 0;
+    margin: 0; 
+    grid-row: 1;  
+}
+.card-img img{
+    border-radius: 0.3rem 0.3rem 0 0;
+    height:100%;
+    width:100%;
+}
+.card-details{
+    display: grid;
+    grid-row:2;
+    padding: 0.6rem;     
+    grid-template-rows: 40% 60%;
+}
+.card-title{
+    display:grid;    
+    grid-row:1;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.country-details
+{
+    display: grid;
+    grid-row: 2;
+}
+/*...........................................................................*/
+#section-detail{
+    display:block;
+    padding: 2rem;
+    padding:2rem 4rem;
+}
+#back{
+    display:flex;
+    padding:0.7rem;
+    height: fit-content;
+    width:fit-content;
+    align-items :center;
+}
+#back span{
+    font-size: 1rem;
+}
+#back img{
+    height: 0.6rem;
+    width: 1rem;
+    margin-right:0.2rem;
+}
+
+/*---------------------------------------------------------------*/
+
+@media screen AND (max-width:720px) {
+    #header,#result{
+        padding: 0.5rem;
+    }
+    #section,#section-detail{
+        padding:1rem 0.5rem; 
+    }
+    body{
+        font-size: 12px;
+    }
+}
+
+@media screen AND (max-width:375px) {
+    body{
+        font-size: 10px;
+    }
+}
