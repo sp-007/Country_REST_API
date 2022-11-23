@@ -7,6 +7,10 @@ body{
     font-size: 16px;
     font-family: "Nunito Sans", sans-serif;
 }
+img{
+    width: -webkit-fill-available;
+    max-width: 90vw;
+}
 
 .dark{
     color:hsl(0, 0%, 100%) !important;
